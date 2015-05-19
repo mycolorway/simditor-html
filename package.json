@@ -1,0 +1,34 @@
+{
+  "name": "simditor-html",
+  "description": "HTML source editing plugin for simditor",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mycolorway/simditor-html",
+  "author": {
+    "name": "farthinker",
+    "email": "farthinker@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mycolorway/simditor-html.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mycolorway/simditor-html/issues"
+  },
+  "scripts": {
+    "test": "grunt test --verbose"
+  },
+  "devDependencies": {
+    "grunt": "0.x",
+    "grunt-contrib-watch": "0.x",
+    "grunt-contrib-coffee": "0.x",
+    "grunt-contrib-sass": "0.x",
+    "grunt-contrib-jasmine": "0.x",
+    "grunt-umd": "2.x"
+  },
+  "dependencies": {
+    "jquery": "2.x",
+    "simditor": "~2.1.9",
+    "js-beautify": "~1.5.5"
+  },
+  "keywords": []
+}

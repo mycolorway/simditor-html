@@ -1,0 +1,31 @@
+{
+  "name": "simditor-html",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mycolorway/simditor-html",
+  "authors": [
+    "farthinker <farthinker@gmail.com>"
+  ],
+  "description": "HTML source editing plugin for simditor",
+  "main": "lib/simditor-html.js",
+  "keywords": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "spec",
+    "node_modules",
+    "vendor",
+    "Gemfile",
+    "Gemfile.lock",
+    "Gruntfile.coffee",
+    "package.json",
+    "README.md",
+    "demo.html",
+    "circle.yml",
+    "umd.hbs"
+  ],
+  "dependencies": {
+    "jquery": "2.x",
+    "simditor": "df-markdown",
+    "js-beautify": "~1.5.5"
+  }
+}
