@@ -46,6 +46,7 @@ describe 'A HTML extension for Simditor', ->
     button.el.mousedown()
 
     editor.textarea.val '<div>paragraph 1</div><p>paragraph 2</p>'
+    editor.textarea.blur()
     button.el.mousedown()
 
     expect(editor.body.html()).toBe('<p>paragraph 1</p><p>paragraph 2</p>')
