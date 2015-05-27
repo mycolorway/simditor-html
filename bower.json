@@ -1,6 +1,6 @@
 {
   "name": "simditor-html",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "homepage": "https://github.com/mycolorway/simditor-html",
   "authors": [
     "farthinker <farthinker@gmail.com>"
@@ -24,7 +24,7 @@
     "umd.hbs"
   ],
   "dependencies": {
-    "jquery": "2.x",
+    "jquery": "~2.1.4",
     "simditor": "~2.1.9",
     "js-beautify": "~1.5.5"
   }

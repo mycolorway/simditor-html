@@ -18,6 +18,7 @@ class HTMLButton extends Simditor.Button
     @editor.textarea.on 'blur', (e) =>
       @editor.el.removeClass 'focus'
       @editor.setValue @editor.textarea.val()
+      @editor.trigger 'valuechanged'
 
     @editor.textarea.on 'input', (e) =>
       @_resizeTextarea()
