@@ -1,7 +1,7 @@
 {
   "name": "simditor-html",
   "description": "HTML source editing plugin for simditor",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "homepage": "https://github.com/mycolorway/simditor-html",
   "author": {
     "name": "farthinker",
