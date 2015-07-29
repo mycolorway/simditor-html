@@ -23,8 +23,7 @@ class HTMLButton extends Simditor.Button
     @editor.textarea.on 'input', (e) =>
       @_resizeTextarea()
 
-  status: ($node) ->
-    true
+  status: ->
 
   command: ->
     @editor.blur()
@@ -52,7 +51,7 @@ class HTMLButton extends Simditor.Button
 
   _resizeTextarea: ->
     @_textareaPadding ||= @editor.textarea.innerHeight() - @editor.textarea.height()
-    @editor.textarea.height(0)
-      .height (@editor.textarea[0].scrollHeight - @_textareaPadding)
+    @editor.textarea
+      .height(@editor.textarea[0].scrollHeight - @_textareaPadding)
 
 Simditor.Toolbar.addButton HTMLButton
