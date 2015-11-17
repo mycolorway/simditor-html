@@ -18,7 +18,6 @@ class HTMLButton extends Simditor.Button
     @editor.textarea.on 'blur', (e) =>
       @editor.el.removeClass 'focus'
       @editor.setValue @editor.textarea.val()
-      @editor.trigger 'valuechanged'
 
     @editor.textarea.on 'input', (e) =>
       @_resizeTextarea()
@@ -34,6 +33,8 @@ class HTMLButton extends Simditor.Button
       @editor.hidePopover()
       @editor.textarea.val @beautifyHTML(@editor.textarea.val())
       @_resizeTextarea()
+    else
+      @editor.setValue @editor.textarea.val()
 
     for button in @editor.toolbar.buttons
       if button.name == 'html'
